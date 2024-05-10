@@ -1,20 +1,16 @@
 %global debug_package %{nil}
 %undefine _package_note_file
-
 Name: starship
 Version: 1.18.2
 Release: 1%{?dist}
 Summary: Minimal, blazing-fast, and infinitely customizable prompt for any shell!
-
 License: ISC
 URL: https://github.com/starship/starship
 Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
-
 BuildRequires: cargo >= 1.74
 BuildRequires: cmake3
 BuildRequires: gcc
 BuildRequires: rust >= 1.74
-
 BuildRequires: pkgconfig(openssl)
 BuildRequires: pkgconfig(zlib)
 
@@ -37,3 +33,5 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 %{_bindir}/%{name}
 
 %changelog
+* Fri May 10 2024 GuinuxBR <guinuxbr@gmail.com> - 1.18.2
+- Initial release
