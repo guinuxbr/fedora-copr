@@ -6,8 +6,7 @@ License: MIT
 Group: Fonts
 URL: https://github.com/ryanoasis/nerd-fonts
 Source0: %{url}/releases/download/v%{version}/FiraCode.tar.xz
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
-BuildRequires: xz
+BuildArch: noarch
 
 %description
 Nerd Fonts patched FiraCode font.
