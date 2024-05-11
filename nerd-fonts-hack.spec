@@ -15,7 +15,7 @@ Nerd Fonts patched Hack font.
 Nerd Fonts patches developer-focused fonts with a high number of glyphs (icons) from popular fonts like Font Awesome, Devicons, Octicons, etc.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -c -q
 
 %build
 # Nothing to do here (assumed unpacking happens during %setup)
