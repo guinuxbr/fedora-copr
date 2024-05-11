@@ -10,7 +10,8 @@ The packages are built using [Fedora Copr](https://copr.fedoraproject.org/) and 
 * [kora-icon-theme](https://github.com/bikass/kora) - Kora is an SVG icon theme with lots of new icons for GNU/Linux operating systems.
 * [nerd-fonts-firacode](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher.
 * [nerd-fonts-hack](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher.
-
+* [quickemu](https://github.com/quickemu-project/quickemu) - Quickly create and run optimised Windows, macOS and Linux virtual machines.
+  
 ## Build status
 
 You can check the build status for each package on [Fedora Copr](https://copr.fedorainfracloud.org/coprs/guinuxbr/fedora-copr/builds/).
