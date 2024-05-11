@@ -2,11 +2,13 @@ Name: nerd-fonts-firacode
 Version: 3.2.1
 Release: 1%{?dist}
 Summary: Nerd Fonts patched FiraCode font
-License: MIT
+License: OFL-1.1
 Group: Fonts
 URL: https://github.com/ryanoasis/nerd-fonts
 Source0: %{url}/releases/download/v%{version}/FiraCode.tar.xz
 BuildArch: noarch
+
+%define fontdir /usr/share/fonts/%{name}
 
 %description
 Nerd Fonts patched FiraCode font.
@@ -16,19 +18,16 @@ Nerd Fonts patches developer-focused fonts with a high number of glyphs (icons) 
 %fontpkg -a
 
 %prep
-%setup -c -n %{name}-%{version}
-
-%build
-%fontbuild -a
+%setup -c
 
 %install
-%fontinstall -a
+install -m 0644 -D -t %{buildroot}%{fontdir} *.ttf
 
-%check
-%fontcheck -a
-
-%fontfiles -a
+%files
+%{fontdir}/*.ttf
+%license LICENSE
+%doc README.md
 
 %changelog
-* Fri May 10 2024 GuinuxBR <guinuxbr@gmail.com> - 3.2.1
+* Sat May 11 2024 GuinuxBR <guinuxbr@gmail.com> - 3.2.1
 - Initial release
