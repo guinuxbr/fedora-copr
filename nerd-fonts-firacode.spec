@@ -17,7 +17,7 @@ Nerd Fonts patches developer-focused fonts with a high number of glyphs (icons) 
 %fontpkg -a
 
 %prep
-%setup -c -n %{fontpkgname0}-%{version}
+%setup -c -n %{name}-%{version}
 
 %build
 %fontbuild -a
