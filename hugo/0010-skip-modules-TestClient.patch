@@ -1,0 +1,11 @@
+diff -u --recursive hugo-0.93.3-vanilla/modules/client_test.go hugo-0.93.3/modules/client_test.go
+--- hugo-0.93.3-vanilla/modules/client_test.go	2022-03-08 04:15:27.000000000 -0600
++++ hugo-0.93.3/modules/client_test.go	2022-03-08 20:11:16.719396644 -0600
+@@ -33,6 +33,7 @@
+ )
+ 
+ func TestClient(t *testing.T) {
++	t.Skip("skip test as network access is not allowed during package build")
+ 	modName := "hugo-modules-basic-test"
+ 	modPath := "github.com/gohugoio/tests/" + modName
+ 	defaultImport := "modh2_2"
