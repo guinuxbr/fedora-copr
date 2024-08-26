@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name: quickemu
-Version: 4.9.4
+Version: 4.9.6
 Release: 1%{?dist}
 Summary: Quickly create and run optimised Windows, macOS and Linux desktop virtual machines
 License: MIT
@@ -35,5 +35,17 @@ install -Dm644 docs/quickemu_conf.1 %{buildroot}/%{_mandir}/man1/quickemu_conf.1
 %{_mandir}/man1/
 
 %changelog
+* Mon Aug 26 2024 GuinuxBR <guinuxbr@gmail.com> - 4.9.6
+- Added more comprehensive testing in CI 🧪
+- Added all required documents/policies to complete Community Standards ⭐️
+- Updated Nix flake to track current stable Nixpkgs for builds ❄️
+- Fixed Nix flake so the build-in QEMU smb server works 📂
+- Fixed kill running virtual machines with --kill ☠️
+- Fixed Windows Server having no network post-install 🪟
+- Fixed Fedora Silverblue downloads 💿️
+- Improve automatic "press any key" for Windows installs 🪟
+- Dropped Windows 8.1, Windows 10 LTSC and Windows Server 2012 R2 🪟
+- Dropped ncurses dependency 🖥️
+
 * Sat May 11 2024 GuinuxBR <guinuxbr@gmail.com> - 4.9.4
 - Initial release
