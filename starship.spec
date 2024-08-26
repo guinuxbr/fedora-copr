@@ -33,7 +33,7 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 %{_bindir}/%{name}
 
 %changelog
-* Mon Aug 10 2024 GuinuxBR <guinuxbr@gmail.com> - 1.20.1
+* Mon Aug 26 2024 GuinuxBR <guinuxbr@gmail.com> - 1.20.1
 - Bug Fixes
     - ci: move to macos-latest image (#6132) (c7a8ea7)
 
