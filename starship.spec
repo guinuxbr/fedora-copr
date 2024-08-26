@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 %undefine _package_note_file
 Name: starship
-Version: 1.18.2
+Version: 1.20.1
 Release: 1%{?dist}
 Summary: Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 License: ISC
@@ -33,5 +33,9 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 %{_bindir}/%{name}
 
 %changelog
+* Mon Aug 10 2024 GuinuxBR <guinuxbr@gmail.com> - 1.20.1
+- Bug Fixes
+    - ci: move to macos-latest image (#6132) (c7a8ea7)
+
 * Fri May 10 2024 GuinuxBR <guinuxbr@gmail.com> - 1.18.2
 - Initial release
