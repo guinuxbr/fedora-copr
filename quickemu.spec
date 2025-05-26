@@ -18,21 +18,19 @@ Quickly create and run optimised Windows, macOS and Linux desktop virtual machin
 %build
 
 %install
-install -Dm644 LICENSE %{buildroot}/%{_licensedir}/%{name}/LICENSE
-install -Dm755 quickemu %{buildroot}/%{_bindir}/quickemu
-install -Dm755 chunkcheck %{buildroot}/%{_bindir}/chunkcheck
-install -Dm755 quickget %{buildroot}/%{_bindir}/quickget
-
-install -Dm644 docs/quickget.1 %{buildroot}/%{_mandir}/man1/quickget.1
-install -Dm644 docs/quickemu.1 %{buildroot}/%{_mandir}/man1/quickemu.1
-install -Dm644 docs/quickemu_conf.1 %{buildroot}/%{_mandir}/man1/quickemu_conf.1
+# Install the scripts and manpages
+%make_install -C docs mandir=%{_mandir} bindir=%{_bindir}
 
 %files
-%{_bindir}/quickemu
+%license LICENSE
+%doc README.md
 %{_bindir}/chunkcheck
+%{_bindir}/quickemu
 %{_bindir}/quickget
-%{_licensedir}/%{name}/LICENSE
-%{_mandir}/man1/
+%{_bindir}/quickreport
+%{_mandir}/man1/quickemu.1%{?ext_man}
+%{_mandir}/man5/quickemu_conf.5%{?ext_man}
+%{_mandir}/man1/quickget.1%{?ext_man}
 
 %changelog
 * Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 4.9.7
