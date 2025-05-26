@@ -29,9 +29,9 @@ Quickly create and run optimised Windows, macOS and Linux desktop virtual machin
 %{_bindir}/quickemu
 %{_bindir}/quickget
 %{_bindir}/quickreport
-%{_mandir}/man1/quickemu.1%{?ext_man}
-%{_mandir}/man5/quickemu_conf.5%{?ext_man}
-%{_mandir}/man1/quickget.1%{?ext_man}
+%{_mandir}/man1/quickemu.1*
+%{_mandir}/man5/quickemu_conf.5*
+%{_mandir}/man1/quickget.1*
 
 %changelog
 * Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 4.9.7
