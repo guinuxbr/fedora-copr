@@ -1,6 +1,6 @@
 %global debug_package %{nil}
 Name: quickemu
-Version: 4.9.6
+Version: 4.9.7
 Release: 1%{?dist}
 Summary: Quickly create and run optimised Windows, macOS and Linux desktop virtual machines
 License: MIT
@@ -35,6 +35,9 @@ install -Dm644 docs/quickemu_conf.1 %{buildroot}/%{_mandir}/man1/quickemu_conf.1
 %{_mandir}/man1/
 
 %changelog
+* Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 4.9.7
+- https://github.com/quickemu-project/quickemu/releases/tag/4.9.7
+
 * Mon Aug 26 2024 GuinuxBR <guinuxbr@gmail.com> - 4.9.6
 - Added more comprehensive testing in CI 🧪
 - Added all required documents/policies to complete Community Standards ⭐️
