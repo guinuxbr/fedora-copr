@@ -7,6 +7,7 @@ License: MIT
 Group: Applications/Emulators
 URL: https://github.com/quickemu-project/quickemu
 Source0: %{url}/archive/refs/tags/%{version}.tar.gz
+BuildRequires: make
 Requires: qemu bash coreutils edk2-tools grep jq mesa-demos pciutils procps python3 genisoimage usbutils util-linux sed socat spice-gtk-tools swtpm xdg-user-dirs xrandr unzip
 
 %description
