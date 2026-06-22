@@ -24,10 +24,6 @@ Kora is an SVG icon theme with lots of new icons for GNU/Linux operating systems
 # Delete useless files from source folder
 rm -f "kora/create-new-icon-theme.cache.sh"
 rm -f "kora/icon-theme.cache"
-rm -f "kora-light/create-new-icon-theme.cache.sh"
-rm -f "kora-light/icon-theme.cache"
-rm -f "kora-light-panel/create-new-icon-theme.cache.sh"
-rm -f "kora-light-panel/icon-theme.cache"
 rm -f "kora-pgrey/create-new-icon-theme.cache.sh"
 rm -f "kora-pgrey/icon-theme.cache"
 
@@ -44,8 +40,6 @@ cp -p "LICENSE" %{buildroot}/usr/share/licenses/%{name}
 %doc README.md
 %license LICENSE
 /usr/share/icons/kora
-/usr/share/icons/kora-light
-/usr/share/icons/kora-light-panel
 /usr/share/icons/kora-pgrey
 
 %changelog
