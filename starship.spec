@@ -8,7 +8,7 @@ License: ISC
 URL: https://github.com/starship/starship
 Source0: %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires: cargo >= 1.74
-BuildRequires: cmake3
+BuildRequires: cmake4
 BuildRequires: gcc
 BuildRequires: rust >= 1.74
 BuildRequires: pkgconfig(openssl)
@@ -22,7 +22,7 @@ Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 
 %install
 export CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_OPT_LEVEL=3
-export CMAKE=cmake3
+export CMAKE=cmake4
 RUSTFLAGS='-C strip=symbols' cargo install --root=%{buildroot}%{_prefix} --path=.
 rm -f %{buildroot}%{_prefix}/.crates.toml \
     %{buildroot}%{_prefix}/.crates2.json

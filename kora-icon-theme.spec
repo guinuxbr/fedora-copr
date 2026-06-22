@@ -34,8 +34,6 @@ rm -f "kora-pgrey/icon-theme.cache"
 # Install icons
 mkdir -p %{buildroot}/usr/share/icons
 cp -dr --no-preserve=mode "kora" %{buildroot}/usr/share/icons/kora
-cp -dr --no-preserve=mode "kora-light" %{buildroot}/usr/share/icons/kora-light
-cp -dr --no-preserve=mode "kora-light-panel" %{buildroot}/usr/share/icons/kora-light-panel
 cp -dr --no-preserve=mode "kora-pgrey" %{buildroot}/usr/share/icons/kora-pgrey
 
 # Install license
