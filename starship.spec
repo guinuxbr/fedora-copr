@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 %undefine _package_note_file
 Name: starship
-Version: 1.23.0
+Version: 1.25.1
 Release: 1%{?dist}
 Summary: Minimal, blazing-fast, and infinitely customizable prompt for any shell!
 License: ISC
@@ -33,6 +33,9 @@ rm -f %{buildroot}%{_prefix}/.crates.toml \
 %{_bindir}/%{name}
 
 %changelog
+* Mon Jun 22 2026 GuinuxBR <guinuxbr@gmail.com> - 1.25.1
+- https://github.com/starship/starship/releases/tag/v1.25.1
+
 * Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 1.23.0
 - https://github.com/starship/starship/releases/tag/v1.23.0
 

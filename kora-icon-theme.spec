@@ -1,5 +1,5 @@
 Name: kora-icon-theme
-Version: 1.6.5
+Version: 2.0.4
 Release: 1%{?dist}
 Summary: Kora is an SVG icon theme with lots of new icons for GNU/Linux operating systems.
 License: GPL-3.0
@@ -51,6 +51,9 @@ cp -p "LICENSE" %{buildroot}/usr/share/licenses/%{name}
 /usr/share/icons/kora-pgrey
 
 %changelog
+* Mon Jun 22 2026 GuinuxBR <guinuxbr@gmail.com> - 2.0.4
+- https://github.com/bikass/kora/releases/tag/v2.0.4
+
 * Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 1.6.5
 - https://github.com/bikass/kora/releases/tag/v1.6.5
 
