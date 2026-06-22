@@ -25,7 +25,7 @@ install -m 0644 -D -t %{buildroot}%{fontdir} *.ttf
 
 %files
 %{fontdir}/*.ttf
-%license LICENSE.md
+%license OFL.txt
 %doc README.md
 
 %changelog
