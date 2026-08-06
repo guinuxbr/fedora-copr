@@ -1,25 +1,54 @@
 # Fedora Copr Repository
 
-This repository is to help me understand RPM packages and maintain some software I can't find in the official
-repositories.
+[![Fedora Copr][copr-shield]][copr-url]
+[![Build Status][builds-shield]][builds-url]
+[![Issues][issues-shield]][issues-url]
 
-The packages are built using [Fedora Copr](https://copr.fedoraproject.org/) and are available for installation on Fedora
-systems. If you'd like to contribute or request a specific package, please
-[open an issue](https://github.com/guinuxbr/fedora-copr/issues).
+Personal repository to manage RPM packages built using [Fedora Copr](https://copr.fedoraproject.org/) for Fedora
+systems.
 
-## Packages currently available
+---
 
-* [kora-icon-theme](https://github.com/bikass/kora) - Kora is an SVG icon theme with lots of new icons for GNU/Linux
-  operating systems.
-* [nerd-fonts-firacode](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher.
-* [nerd-fonts-hack](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher.
-* [nerd-fonts-jetbrainsmono](https://github.com/ryanoasis/nerd-fonts) - Iconic font aggregator, collection, & patcher.
-* [quickemu](https://github.com/quickemu-project/quickemu) - Quickly create and run optimised Windows, macOS and Linux
-  virtual machines.
-* [starship](https://github.com/starship/starship) - A minimal, blazing-fast, and infinitely customizable prompt for any
-  shell!
+## 🚀 Quick Start
 
-## Build status
+To enable this repository and install packages:
 
-You can check the build status for each package on
-[Fedora Copr](https://copr.fedorainfracloud.org/coprs/guinuxbr/fedora-copr/builds/).
+Enable the Copr repository:
+
+```bash
+sudo dnf copr enable guinuxbr/fedora-copr
+```
+
+Install a package:
+
+```bash
+sudo dnf install <package-name>
+```
+
+---
+
+## 📦 Available Packages
+
+| Package                        | Description                                                     | Upstream                                                                  | Status                     |
+|:-------------------------------|:----------------------------------------------------------------|:--------------------------------------------------------------------------|:---------------------------|
+| **`kora-icon-theme`**          | SVG icon theme with lots of new icons for GNU/Linux             | [bikass/kora](https://github.com/bikass/kora)                             | Active                     |
+| **`nerd-fonts-firacode`**      | Iconic font aggregator, collection, & patcher                   | [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)           | Active                     |
+| **`nerd-fonts-hack`**          | Iconic font aggregator, collection, & patcher                   | [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)           | Active                     |
+| **`nerd-fonts-jetbrainsmono`** | Iconic font aggregator, collection, & patcher                   | [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)           | Active                     |
+| **`starship`**                 | Minimal, blazing-fast, and infinitely customizable shell prompt | [starship/starship](https://github.com/starship/starship)                 | Active                     |
+| ~~`quickemu`~~                 | Quickly create and run optimized Windows, macOS, and Linux VMs  | [quickemu-project/quickemu](https://github.com/quickemu-project/quickemu) | *In official Fedora repos* |
+
+---
+
+## 🛠️ Build Status & Contributions
+
+You can check the build status for each package on [Fedora Copr Builds][builds-url].
+
+If you would like to contribute or request a specific package, please [open an issue][issues-url].
+
+[copr-shield]: https://img.shields.io/badge/Fedora%20Copr-guinuxbr%2Ffedora--copr-blue?style=flat-square&logo=fedora
+[copr-url]: https://copr.fedorainfracloud.org/coprs/guinuxbr/fedora-copr/
+[builds-shield]: https://img.shields.io/badge/Builds-Fedora%20Copr-5254cf?style=flat-square&logo=fedora
+[builds-url]: https://copr.fedorainfracloud.org/coprs/guinuxbr/fedora-copr/builds/
+[issues-shield]: https://img.shields.io/github/issues/guinuxbr/fedora-copr?style=flat-square
+[issues-url]: https://github.com/guinuxbr/fedora-copr/issues

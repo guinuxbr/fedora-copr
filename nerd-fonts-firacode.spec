@@ -1,5 +1,5 @@
 Name: nerd-fonts-firacode
-Version: 3.4.0
+Version: 3.5.0
 Release: 1%{?dist}
 Summary: Nerd Fonts patched FiraCode font
 License: OFL-1.1
@@ -29,6 +29,8 @@ install -m 0644 -D -t %{buildroot}%{fontdir} *.ttf
 %doc README.md
 
 %changelog
+* Thu Aug 06 2026 GuinuxBR <guinuxbr@gmail.com> - 3.5.0
+- https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.5.0
 * Mon May 26 2025 GuinuxBR <guinuxbr@gmail.com> - 3.4.0
 - https://github.com/ryanoasis/nerd-fonts/releases/tag/v3.4.0
 
