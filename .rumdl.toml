@@ -2,7 +2,6 @@
 
 # Global configuration options
 [global]
-
 # List of file/directory patterns to exclude from linting
 exclude = [
     # Common directories to exclude
@@ -14,17 +13,48 @@ exclude = [
     "build",
 
     # Specific files or patterns
-    "CHANGELOG.md",
     "LICENSE.md",
 ]
 
-# Respect .gitignore files when scanning directories (default: true)
+# Respect .gitignore, .ignore and git exclude files when scanning directories
+# (default: true). .markdownlintignore applies regardless.
 respect-gitignore = true
 
-# Rule-specific configurations (uncomment and modify as needed)
 [MD013]
-line-length = 120   # Line length
-reflow = true       # Enable text reflowing to match the line length
-code-blocks = false # Exclude code blocks from line length check
-tables = false      # Exclude tables from line length check
-headings = true     # Include headings in line length check
+abbreviations = ["Assn", "Univ"]  # Add custom abbreviations for sentence-driven reflow modes
+atomic-spans = true  # Treat code/emphasis spans as atomic units during reflow (default: true)
+blockquotes = true  # Check blockquote content (default: true)
+bracket-display-math = false  # Protect standalone \[ ... \] TeX display math (default: false)
+break-words = ["puisque", "porque"]  # Add semantic break words for your project's prose
+cjk-soft-break = "space"  # How reflow joins a line break between two CJK characters: "space" or "join" (default: "space")
+code-block-line-length = 120  # Optional per-context limit for code blocks; falls back to line-length when unset
+code-blocks = false  # Don't check code blocks (default: true)
+code-spans = false  # Don't flag lines whose only overflow is an unbreakable inline code span (default: true)
+heading-line-length = 100  # Optional per-context limit for headings; falls back to line-length when unset
+headings = true  # Check headings (default: true)
+ignore-link-urls = true  # Ignore inline link/image URLs when measuring line length (default: true)
+length-mode = "visual"  # How to count line length: "visual", "chars", or "bytes" (default: "visual")
+line-length = 120  # Maximum characters per line (default: 80)
+link-text-punctuation = "ignore"  # "trailing" considers terminal link text and image alt punctuation
+math-blocks = false  # Don't check display-math blocks (default: true)
+paragraphs = true  # Check paragraph/regular text (default: true)
+reflow = true  # Enable automatic text reflow/wrapping (default: false)
+reflow-break-code-spans = true  # Allow word-by-word reflow within inline code when atomic-spans is false (default: true)
+reflow-break-link-text = false  # Allow reflow to wrap long lines within link/image text (default: false)
+reflow-length-exemptions = false  # Measure reflowed lines with the same exemptions the check applies (default: false)
+reflow-mode = "default"  # "default", "normalize", "sentence-per-line", "sentence-pack", or "semantic-line-breaks"
+require-sentence-capital = true  # Require uppercase to start the next sentence (default: true)
+stern = false  # Like strict, but unwrappable single-token lines are still permitted (default: false)
+strict = false  # Disables exceptions for URLs, etc. (default: false)
+tables = false  # Don't check tables (default: false)
+
+[MD060]
+enabled = true  # Default: opt-in for conservative adoption
+aligned-delimiter = false  # Pad delimiter dashes to header widths under compact/tight
+column-align = "auto"  # Options: "auto", "left", "center", "right"
+column-align-body = "auto"  # Override alignment for body rows only
+column-align-header = "auto"  # Override alignment for header row only
+loose-last-column = false  # Cap last column at header width when true
+max-width = 0  # Default: inherit from MD013's line-length
+pad-width = 1  # Spaces per side of a cell; unset keeps each style's own
+style = "aligned"  # Options: "aligned", "aligned-no-space", "compact", "tight", "any"

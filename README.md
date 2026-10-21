@@ -30,7 +30,7 @@ sudo dnf install <package-name>
 ## 📦 Available Packages
 
 | Package                        | Description                                                     | Upstream                                                                  | Status                     |
-|:-------------------------------|:----------------------------------------------------------------|:--------------------------------------------------------------------------|:---------------------------|
+| :----------------------------- | :-------------------------------------------------------------- | :------------------------------------------------------------------------ | :------------------------- |
 | **`kora-icon-theme`**          | SVG icon theme with lots of new icons for GNU/Linux             | [bikass/kora](https://github.com/bikass/kora)                             | Active                     |
 | **`nerd-fonts-firacode`**      | Iconic font aggregator, collection, & patcher                   | [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)           | Active                     |
 | **`nerd-fonts-hack`**          | Iconic font aggregator, collection, & patcher                   | [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts)           | Active                     |
